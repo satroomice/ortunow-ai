@@ -7,27 +7,35 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <header class="hero">
-        <h1>🌱 OrtuNow AI</h1>
-        <p class="subtitle">Asisten parenting yang tenang dan responsif</p>
-      </header>
+    <div class="app-shell">
+      <div class="container">
+        <header class="hero">
+          <div class="hero-title">
+            <div class="brand-mark">👩‍👧</div>
+            <div>
+              <h1>OrtuNow AI</h1>
+              <p class="subtitle">Asisten parenting yang siap bantu kapan saja</p>
+            </div>
+          </div>
+          <span class="status-pill">Online</span>
+        </header>
 
-      <main>
-        <div id="chat-box" class="chat-box" aria-live="polite"></div>
+        <main>
+          <div id="chat-box" class="chat-box empty" aria-live="polite"></div>
 
-        <form id="chat-form" class="chat-form">
-          <label class="sr-only" for="user-input">Tulis pesan</label>
-          <input
-            type="text"
-            id="user-input"
-            placeholder="Tanyakan seputar parenting..."
-            autocomplete="off"
-            required
-          />
-          <button type="submit">Kirim</button>
-        </form>
-      </main>
+          <form id="chat-form" class="chat-form">
+            <label class="sr-only" for="user-input">Tulis pesan</label>
+            <input
+              type="text"
+              id="user-input"
+              placeholder="Tanyakan seputar parenting..."
+              autocomplete="off"
+              required
+            />
+            <button type="submit">Kirim</button>
+          </form>
+        </main>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>

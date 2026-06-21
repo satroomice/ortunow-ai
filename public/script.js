@@ -47,6 +47,10 @@ form.addEventListener('submit', async function (event) {
 });
 
 function appendMessage(role, text) {
+  if (chatBox.classList.contains('empty')) {
+    chatBox.classList.remove('empty');
+  }
+
   const message = document.createElement('div');
   message.className = `message ${role}`;
   message.innerHTML = formatMarkdown(text);
